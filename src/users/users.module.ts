@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersService } from './users.service';
-import { UsersRepository } from './users.repository'; // Importação correta
 import { User } from './entities/user.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([User, UsersRepository])], // Certifique-se de que UsersRepository está aqui
+  imports: [TypeOrmModule.forFeature([User])], // Certifique-se de incluir a entidade User
   providers: [UsersService],
   exports: [UsersService],
 })
