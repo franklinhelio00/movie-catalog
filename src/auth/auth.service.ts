@@ -31,7 +31,10 @@ export class AuthService {
 
   async register(user: any): Promise<any> {
     const hashedPassword = bcrypt.hashSync(user.password, 10);
-    const newUser = this.usersRepository.create({ ...user, password: hashedPassword });
+    const newUser = this.usersRepository.create({
+      ...user,
+      password: hashedPassword,
+    });
     return this.usersRepository.save(newUser);
   }
 }
