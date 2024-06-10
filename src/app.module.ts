@@ -3,8 +3,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { MovieModule } from './movie/movie.module';
-import { AuthModule } from './auth/auth.module';
-import { MovieModule } from './movie/movie.module';
 
 @Module({
   imports: [
