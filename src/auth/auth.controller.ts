@@ -1,19 +1,23 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Module } from '@nestjs/common';
+import { JwtModule } from '@nestjs/jwt';
+import { PassportModule } from '@nestjs/passport';
+import { JwtStrategy } from './jwt.strategy';
 import { AuthService } from './auth.service';
-import { CreateUserDto } from './dto/create-user.dto';
-import { LoginUserDto } from './dto/login-user.dto';
+import { AuthController } from './auth.controller';
+import { UsersModule } from '../users/users.module';
 
-@Controller('auth')
-export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+@Module({
+  imports: [
+    UsersModule,
+    PassportModule,
+    JwtModule.register({
+      secret: process.env.JWT_SECRET,
+      signOptions: { expiresIn: '60m' },
+    }),
+  ],
+  providers: [AuthService, JwtStrategy],
+  controllers: [AuthController],
+})
+export class AuthModule {}
+export { AuthController };
 
-  @Post('register')
-  async register(@Body() createUserDto: CreateUserDto) {
-    return this.authService.register(createUserDto);
-  }
-
-  @Post('login')
-  async login(@Body() loginUserDto: LoginUserDto) {
-    return this.authService.login(loginUserDto);
-  }
-}
