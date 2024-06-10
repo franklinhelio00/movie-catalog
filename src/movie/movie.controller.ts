@@ -6,14 +6,11 @@ import {
   Param,
   Delete,
   Put,
-  UseGuards,
 } from '@nestjs/common';
 import { MovieService } from './movie.service';
 import { Movie } from './entities/movie.entity';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('movies')
-@UseGuards(JwtAuthGuard) // Adicione esta linha para proteger todos os endpoints do controlador
 export class MovieController {
   constructor(private readonly movieService: MovieService) {}
 
