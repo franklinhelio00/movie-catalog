@@ -8,7 +8,7 @@ import { UsersModule } from '../users/users.module';
 
 @Module({
   imports: [
-    UsersModule,
+    UsersModule, // Certifique-se de importar o UsersModule
     PassportModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET,
