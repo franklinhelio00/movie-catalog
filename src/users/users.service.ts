@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { Repository, DeepPartial } from 'typeorm';
 import { User } from './entities/user.entity';
 import { CreateUserDto } from './dto/create-user.dto';
 
@@ -28,10 +28,7 @@ export class UsersService {
     return this.usersRepository.findOne({ where: { id } });
   }
 
-  async update(
-    id: number,
-    updateUserDto: Partial<CreateUserDto>,
-  ): Promise<void> {
+  async update(id: number, updateUserDto: DeepPartial<User>): Promise<void> {
     await this.usersRepository.update(id, updateUserDto);
   }
 
