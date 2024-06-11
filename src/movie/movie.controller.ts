@@ -9,36 +9,48 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { MovieService } from './movie.service';
-import { Movie } from './entities/movie.entity';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { MovieDto } from './dto/movie.dto';
+import { UpdateMovieDto } from './dto/update-movie.dto';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { AuthGuard } from '@nestjs/passport';
 
+@ApiTags('movies')
 @Controller('movies')
-@UseGuards(JwtAuthGuard)
-export class MovieController {
-  constructor(private readonly movieService: MovieService) {}
+export class MoviesController {
+  constructor(private readonly moviesService: MovieService) {}
 
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
   @Post()
-  create(@Body() createMovieDto: Movie) {
-    return this.movieService.create(createMovieDto);
+  create(@Body() movieDto: MovieDto) {
+    return this.moviesService.create(movieDto);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
   @Get()
   findAll() {
-    return this.movieService.findAll();
+    return this.moviesService.findAll();
   }
 
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.movieService.findOne(+id);
+    return this.moviesService.findOne(+id);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
   @Put(':id')
-  update(@Param('id') id: string, @Body() updateMovieDto: Movie) {
-    return this.movieService.update(+id, updateMovieDto);
+  update(@Param('id') id: string, @Body() updateMovieDto: UpdateMovieDto) {
+    return this.moviesService.update(+id, updateMovieDto);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.movieService.remove(+id);
+    return this.moviesService.remove(+id);
   }
 }
