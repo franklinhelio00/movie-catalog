@@ -1,3 +1,4 @@
+// src/movie/entities/movie.entity.ts
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
@@ -14,6 +15,6 @@ export class Movie {
   @Column()
   director: string;
 
-  @Column({ type: 'date' })
-  releaseDate: Date;
+  @Column({ type: 'date', nullable: true })
+  releaseDate: Date; // Permitir nulos para evitar erros de sincronização
 }
