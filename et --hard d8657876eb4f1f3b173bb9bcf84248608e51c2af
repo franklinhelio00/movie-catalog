@@ -1,0 +1,155 @@
+[33mcommit 95e90ef738e3d6afad499bd2dd12f903005da865[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 20:21:21 2024 -0300
+
+    Fix type mismatch in MovieService create and update methods
+
+[33mcommit 1b3f44dc3703ddcc7eb7e8d56afc1ee9f079b69b[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 20:20:33 2024 -0300
+
+    Fix type mismatch in MovieService create and update methods
+
+[33mcommit 486f51072eaae1200149f07fe6260dbe203e3859[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 20:18:41 2024 -0300
+
+    Fix type mismatch in MovieService create and update methods
+
+[33mcommit 27c4b4d209cfb2e910eeccc48330e97fc8647296[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 20:14:45 2024 -0300
+
+    Fix MovieDto types and service methods
+
+[33mcommit c3b4f2ff49b365443fb61f2a3a58d952900e5321[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 20:12:58 2024 -0300
+
+    Adjust MovieDto and service for proper type matching
+
+[33mcommit 8385f987df280fe789bb68b4f8827adbacc97d84[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 20:10:26 2024 -0300
+
+    Add DTO validation and Swagger schemas
+
+[33mcommit d8657876eb4f1f3b173bb9bcf84248608e51c2af[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:56:46 2024 -0300
+
+    Fix UsersRepository metadata issue
+
+[33mcommit b56942e7cce183e85bdd2a3a3e5e28a8587bccfc[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:48:26 2024 -0300
+
+    Fix users module to properly use UsersRepository
+
+[33mcommit 5fdbf7e3b3d00b768523081eae31d02edce86bf1[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:43:48 2024 -0300
+
+    Fix users module to properly use UsersRepository
+
+[33mcommit 77bc45ddb68adf1ac5c7fe136c04046a08b7c032[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:30:38 2024 -0300
+
+    Protect movie endpoints with JWT authentication
+
+[33mcommit 9ff003680a60bb5b48287c6223db9d34d80b02df[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:26:27 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit e72ce52a2b5ac10fbd7bad16d8aa59aa23740f2d[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:20:45 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit 166da91feb226f24b07fc23e81f1d0e620f9cd2f[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:18:26 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit ff406e10544a3216fe99b8d9a8723a12cd6ef2cf[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:11:06 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit a14476351efd5c4e400109a10d7ed5f142163ca5[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:09:18 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit 3f1507f7055b0e31e85761ad68f263b03e2e2fcd[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:08:44 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit 2e8cd12708461085c44364fbe1cb98fb2742212c[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:05:44 2024 -0300
+
+    Trigger redeploy
+
+[33mcommit 3f6a5636e6f97ce71f48e954be2c5c27e5a91445[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:05:37 2024 -0300
+
+    Trigger redeploy
+
+[33mcommit 6e92b318d798523f1ce8b99cfddb789e6b5ac232[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 19:03:26 2024 -0300
+
+    Add Users module for authentication
+
+[33mcommit 6b3897f7d3b7fc7e1ee88c4e041c70d12e29a9d9[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:48:29 2024 -0300
+
+    Add DTOs for authentication
+
+[33mcommit 25f57debfe81c2200fa47c2c9a4860b7675690c1[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:43:28 2024 -0300
+
+    Ensure application listens on the correct port
+
+[33mcommit 4fbccd44007c896b2fbcfeed5e5395a007e888eb[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:39:38 2024 -0300
+
+    Configure SSL for PostgreSQL connection
+
+[33mcommit 78226ddaec368b45cb104ad6abd51d1b875ba744[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:36:37 2024 -0300
+
+    Fix MovieService dependency injection
+
+[33mcommit 57b09531d622166eea1b8965efcdaaaccbe0144d[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:34:24 2024 -0300
+
+    Trigger redeploy
+
+[33mcommit 6f4f1c5eb1b11fa4666ae188308090927188be7d[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:08:27 2024 -0300
+
+    Fix import duplicates and specify Node.js version
+
+[33mcommit d3b860a0676da15d414a4ff9c6936adf0b094b4e[m
+Author: franklinhelio00 <franklinhelio00@gmail.com>
+Date:   Mon Jun 10 18:03:51 2024 -0300
+
+    Initial commit

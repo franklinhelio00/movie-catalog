@@ -26,7 +26,23 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+# Movie Catalog API
+
+## Descrição
+
+Este projeto é uma API RESTful para um catálogo de filmes, protegida por autenticação JWT. Ele inclui operações CRUD para filmes e endpoints de autenticação.
+
+## Ferramentas Utilizadas
+
+- **TypeScript**
+- **Nest.js**
+- **TypeORM**
+- **Swagger**
+- **Docker**
+- **Redis**
+- **PostgreSQL**
+
+## Instalação
 
 ```bash
 $ npm install
@@ -57,7 +73,27 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+# Para iniciar o projeto começamos com esses passos abaixo
+# Instale o NestJS CLI globalmente (se ainda não tiver)
+npm install -g @nestjs/cli
 
+# Inicialize um novo projeto NestJS (caso ainda não tenha feito)
+nest new movie-catalog
+
+# Navegue até o diretório do projeto
+cd movie-catalog
+
+# Dependências de Produção
+npm install @nestjs/common @nestjs/core @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/typeorm bcrypt class-transformer class-validator jsonwebtoken passport passport-jwt pg reflect-metadata rxjs typeorm
+
+# Dependências de Desenvolvimento
+npm install --save-dev @nestjs/cli @nestjs/schematics @nestjs/testing @types/bcrypt @types/jest @types/node @types/passport-jwt @types/pg @types/supertest jest prettier source-map-support supertest ts-jest ts-loader ts-node tsconfig-paths typescript
+
+# Adicione as dependências ao seu projeto NestJS
+nest add @nestjs/jwt
+nest add @nestjs/passport
+nest add @nestjs/swagger
+nest add @nestjs/typeorm
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
