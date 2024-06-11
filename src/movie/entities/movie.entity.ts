@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Movie {
@@ -14,6 +14,6 @@ export class Movie {
   @Column()
   director: string;
 
-  @Column()
+  @Column({ type: 'date' })
   releaseDate: Date;
 }
