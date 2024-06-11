@@ -8,8 +8,8 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
 
   const config = new DocumentBuilder()
-    .setTitle('Movie Catalog API')
-    .setDescription('API for movie catalog management')
+    .setTitle('API do catálogo de filmes')
+    .setDescription('API para gerenciamento de catálogo de filmes')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
