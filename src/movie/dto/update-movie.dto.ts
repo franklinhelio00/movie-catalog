@@ -1,15 +1,5 @@
-import { ApiProperty } from '@nestjs/swagger';
+// src/movie/dto/update-movie.dto.ts
+import { PartialType } from '@nestjs/swagger';
+import { MovieDto } from './movie.dto';
 
-export class UpdateMovieDto {
-  @ApiProperty()
-  title?: string;
-
-  @ApiProperty()
-  description?: string;
-
-  @ApiProperty()
-  director?: string;
-
-  @ApiProperty()
-  releaseDate?: Date;
-}
+export class UpdateMovieDto extends PartialType(MovieDto) {}

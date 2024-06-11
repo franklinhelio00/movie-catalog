@@ -14,6 +14,6 @@ export class Movie {
   @Column()
   director: string;
 
-  @Column({ type: 'date', nullable: true })
+  @Column({ type: 'date' })
   releaseDate: Date;
 }
