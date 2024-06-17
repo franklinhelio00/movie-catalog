@@ -96,7 +96,7 @@ nest add @nestjs/swagger
 nest add @nestjs/typeorm
 ## Support
 
-##Para testar a API clique no link abaixo:
+Para testar a API clique no link abaixo:
 [TESTE-AQUI](https://movie-catalog-app-11f56a055da0.herokuapp.com/api#/auth/AuthController_login)
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
